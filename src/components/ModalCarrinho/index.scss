@@ -1,0 +1,229 @@
+@use "../../sass/variables" as *;
+
+.modal {
+    margin-top: 30px;
+    width:100%;
+
+    position: absolute;
+    
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        min-width: 900px;
+        max-width: 1267px;
+        height: 919px;
+        border-radius: 100px;
+        background-color: #fff;
+        padding: 10px;
+    }
+
+    &__container--main {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        &-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10vh 2vh 10vh 1vh;
+            height: 55%;
+        }
+        &-left-img {
+            border-radius: 10px;
+        }
+        &-right {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+            
+            gap: 10px;
+            text-align: left;
+        }
+        &__info h3 {
+            margin-top: 157px;
+            margin-bottom: 50px;
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 20px;
+            text-align: center;
+            color: $button-color;
+        }
+
+        &__info h2 {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 20px;
+            text-align: left;
+            color: $fundo-header;
+        }
+
+        &__info-title {
+            width: 100%;
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 38px;
+            line-height: 20px;
+            text-align: center;
+            color: $fundo-header;
+            padding-bottom: 10px;
+            border-bottom: 3px solid $button-color;            
+            transform: matrix (1, 0, 0, -1, 0, 0);
+        }
+
+        &-right__detail-color {
+            margin-top: 27px;
+            margin-bottom: 21px;
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 20px;
+            text-align: left;
+
+            color: #2d2d2d;
+
+            text-shadow: 0px 4px 4px rgba(203, 203, 203, 0.25);
+        }
+        
+    }
+
+
+}
+
+.right__cube-colorblock {
+        
+    display: flex;
+    margin:0px 10px 10px 0px;
+    gap: 5px;
+    
+
+    span {
+        cursor: pointer;
+    }
+}
+.close {
+    width: 32px;
+    height: 32px;
+    top: 30px;
+    right: calc(-100% + 64px);
+    border: 1px solid #333;
+    button.outset{border-style:outset;};
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+  }
+  
+  .close::before, .close::after {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: -1;
+    transition: 1s;
+    content: '';
+  }
+  
+  .close::before {
+    height: 32px;
+    width: 32px;
+  }
+  
+  .close::after {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+  
+  .close:hover::before {
+    width: 0px;
+    background: #fff;
+  }
+  
+  .close:hover::after {
+    height: 0px;
+    background: #fff;
+  }
+  
+  .close:hover {
+    background: #fff;
+  }
+
+  .modal__container__product-buttons{
+
+        display: flex;
+        flex-direction: column;
+        row-gap:3px;
+
+        .continuar {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 20px;
+            text-align: center;            
+            margin-top:92px;
+            background-color:$button-color;
+            border:none;
+            border-radius:10px;
+            width: 439px;
+            height: 63px;
+            cursor: pointer;
+          
+        }
+
+        .finalizar {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 20px;
+            text-align: center;
+            margin-top:28px;  
+            background-color:$grey-button;
+            border:none;
+            border-radius:10px;
+            width: 439px;
+            height: 63px;
+            cursor: pointer;
+            color:#fff;
+            
+        }
+
+        a {
+            text-decoration:none;
+            color: #fff;
+          
+        }
+
+
+  }
+  
+

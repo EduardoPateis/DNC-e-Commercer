@@ -1,0 +1,46 @@
+@use "../../sass/variables" as *;
+
+.footer{
+    display:grid;    
+    color:#FFF;
+    position: absolute;
+    padding: 0;
+    
+    background: #0C70F2;
+    width: 100%;
+    max-height: 140px;
+   
+
+   
+
+    &__geral{
+        display:flex;
+        justify-content: start;        
+        width: 100%;        
+        left: 0px;        
+        align-items: center;
+        
+
+    }
+    &__img{
+        margin-left:44px;
+        
+      
+        
+
+    }
+    &__p{
+        width:65%;
+        margin-left:65px;
+        margin-top: 10px;
+    }
+    &__span{
+        font-weight:bold;
+    }
+    &__jaba{
+        
+        text-align: center;      
+
+    }
+
+}

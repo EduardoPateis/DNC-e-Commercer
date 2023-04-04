@@ -1,0 +1,66 @@
+@use "../../sass/_variables.scss" as *;
+
+.header-menu {
+    padding: 27px 56px;
+    background-color: $fundo-header;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+
+
+    &__inicial {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 31px;
+    }
+    &__input{
+        width: 100%;
+        margin-left: 60px;
+        position: relative;
+
+       
+    }
+
+
+
+    &__pesquisa {
+
+        box-sizing: border-box;
+        width: 90%;
+        height: 48px;
+        background-color : #ffffff;
+        border: 1px solid #b7b7b7;
+        border-radius: $input-border-radius;
+        padding-left: 70px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    &__lupa{
+        position:absolute;
+        left:26px;
+        top:50%;
+        transform:translateY(-50%);
+
+
+    }
+
+    &__ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 35px;
+        color: #ffffff;
+    }
+    &__novidades {
+        font-weight: 900;
+    }
+}

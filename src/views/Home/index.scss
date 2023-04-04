@@ -1,0 +1,41 @@
+// Inicialização de variáveis
+@use "../../sass/variables" as *;
+.home {
+  background-color: $fundo-header;
+  display:flex;
+  flex-direction: column;
+
+  padding-top: 247px;
+ 
+
+  &__header{
+    position:fixed;
+    top: 0;
+    left:0;
+    width: 100%;    
+    margin-bottom:10px ;
+    z-index: 1000000;
+
+
+  }
+
+  &__AdvertCard{
+    width: 100%;
+  }
+
+
+      
+  &__products{
+
+    padding: 5vh 0;
+    display: grid;
+    justify-content: center;
+    grid: auto/ auto auto auto;
+   
+    gap: 5em;   
+     
+       
+
+   
+  }
+}
