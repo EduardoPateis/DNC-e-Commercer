@@ -1,5 +1,5 @@
 @use "../../sass/_variables.scss" as *;
-@use "../../sass/_mixins.scss" as *;
+
 
 
 .product-card{
@@ -22,12 +22,20 @@
     }
 
     &__button{
-        @include card-product-button;
-        margin-bottom: 1em;
 
+        width: 128px;
+        height: 24px; 
+        background-color: $button-color;       
+        margin-bottom: 1em;
+        border:none;
         a{
             text-decoration: none;
             color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+
         }
     }
 
