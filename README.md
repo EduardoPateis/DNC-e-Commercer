@@ -107,5 +107,5 @@ O projeto deve ter a seguinte estrutura de diretórios:
 
 Feito com ❤️ por Eduardo 👋🏽 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-Eduardo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/eduardo-pateis-joaquim/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Eduardo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/eduardo-pateis-joaquim/)](https://www.linkedin.com/in/eduardo-pateis-joaquim/) 
 
